@@ -1,0 +1,18 @@
+// header
+
+.headerWrap {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  height: 56px;
+  padding: 0 20px;
+  background: #fff;
+  border-bottom: 1px solid rgb(216, 222, 228);
+}
+.headerWrap .headerText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #777;
+  margin: 0 !important;
+}

@@ -1,0 +1,33 @@
+.promptWrap {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 16px;
+}
+.textareaControl {
+  resize: none;
+  border: 0;
+  background: transparent;
+  padding: 0 0 10px;
+  font-size: 14px;
+}
+.textareaControl:focus {
+  border: 0;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+.textareaControl:read-only {
+  pointer-events: none;
+}
+
+.responseWrap {
+  display: block;
+}
+.responseText {
+  border: 1px solid rgba(27, 31, 36, 0.15);
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 14px;
+  height: auto;
+  min-height: 160px;
+}

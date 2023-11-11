@@ -1,0 +1,7 @@
+@import '~bootstrap/scss/bootstrap';
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}

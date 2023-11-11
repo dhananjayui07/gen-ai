@@ -1,0 +1,7 @@
+{
+  "intents": [
+    { "id": 1, "title": "Internet issues", "description": "Customer seems to be facing internet issues" },
+    { "id": 2, "title": "Billing issues", "description": "Customer seems to be facing billing issues" },
+    { "id": 3, "title": "New connection", "description": "Customer wants to purchase a new connection" }
+  ]
+}

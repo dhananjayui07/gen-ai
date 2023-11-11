@@ -1,0 +1,20 @@
+{
+	"parser": "typescript",
+	"singleQuote": true,
+	"useTabs": true,
+	"printWidth": 120,
+	"bracketSpacing": true,
+	"semi": true,
+	"trailingComma": "es5",
+	"jsxBracketSameLine": false,
+	"jsxSingleQuote": false,
+	"proseWrap": "always",
+	"quoteProps": "as-needed",
+	"tabWidth": 2,
+	"arrowParens": "always",
+	"importOrderSeparation": true,
+	"experimentalBabelParserPluginsList": [
+		"jsx",
+		"tsx"
+	]
+}
