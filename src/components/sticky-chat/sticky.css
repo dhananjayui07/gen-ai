@@ -1,0 +1,83 @@
+/* CSS for the sticky button */
+.sticky-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* CSS for the sticky form */
+  .sticky-form {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .yellow-form {
+    background-color: yellow;
+    padding: 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .yellow-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .yellow-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:#000;
+  }
+  
+  .yellow-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    font-size: 16px;
+    color:#000;
+  }
+  
+  .yellow-form button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .yellow-form button:hover {
+    background-color: #ffaa00; /* Color change on hover */
+  }
+
+  /* CSS for the medium-sized button */
+.medium-button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto; /* Center the button horizontally */
+  }
+  
+  .medium-button:hover {
+    background-color: #ffaa00; /* Color change on hover */
+  }
+  
