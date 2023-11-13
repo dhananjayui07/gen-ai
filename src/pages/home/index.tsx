@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import styles from './home.module.scss';
 
@@ -52,26 +52,36 @@ const Home: React.FC = () => {
 			<h3 className="fs-5 mb-3">Question</h3>
 			<div className="mb-3">
 				<Form>
-					<Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
-						<Form.Label>Prompt</Form.Label>
+					<Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+						<Row>
+							<Col sm={6}>
+								<Form.Select className="mb-3" aria-label="Summarize file content">
+									<option>Summarize file content</option>
+									<option value="2">Get sales prompts from call transcript</option>
+									<option value="1">Get marketing subject lines</option>
+								</Form.Select>
+							</Col>
+						</Row>
+						{/* <Form.Label>File content</Form.Label> */}
 						<div className={`${styles.promptWrap}`}>
 							{/* summarize the content of the call */}
 							<Form.Control
 								className={`${styles.textareaControl}`}
 								onChange={(e) => setTextareaContent(e.target.value)}
 								as="textarea"
-								placeholder="Enter your prompt..."
+								placeholder="Paste your file content here..."
 								rows={4}
 							/>
-							<Button
-								onClick={handleShowContentClick}
-								className="text-nowrap d-inline-flex w-auto align-items-center gap-2 px-4 mt-3"
-							>
-								Go
-								<span className="material-icons">send</span>
-							</Button>
 						</div>
 					</Form.Group>
+					<Button
+						onClick={handleShowContentClick}
+						variant='warning'
+						className="text-nowrap d-inline-flex w-auto align-items-center gap-2 px-3 mt-3"
+					>
+						Go
+						<span className="material-icons">send</span>
+					</Button>
 				</Form>
 			</div>
 			<hr />

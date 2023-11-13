@@ -18,6 +18,14 @@ const SidebarLeft: React.FC = () => {
 				{/* <input type="file" /> */}
 			</div>
 			<div>
+				<h3>Tools</h3>
+				<ul>
+					<li>Email - Subject lines</li>
+					<li>Sales prompts</li>
+					<li>Code review</li>
+				</ul>
+			</div>
+			<div>
 				<h3>Knowledge</h3>
 				<ul>
 					<li>ServiceNow</li>
