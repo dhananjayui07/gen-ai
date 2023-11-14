@@ -1,7 +1,7 @@
 // ModalForm.js
 import React, { useState } from 'react';
 
-const ModalForm = ({ isOpen, onClose }) => {
+const ModalForm = () => {
 
   const [companyType, setCompanyType] = useState('');
   const [industry, setIndustry] = useState('');
@@ -10,23 +10,23 @@ const ModalForm = ({ isOpen, onClose }) => {
   const [text, setText] = useState('');
   const [output, setOutput] = useState('');
 
-  const handleCompanyType = (e) => {
-    setCompanyType(e.target.value);
-  };
+  const handleCompanyType = (e: any) => {
+		setCompanyType(e.target.value);
+	};
 
-  const handleIndustry = (e) => {
-    setIndustry(e.target.value);
-  };
+  const handleIndustry = (e: any) => {
+		setIndustry(e.target.value);
+	};
 
-  const handleOptionChange3 = (e) => {
-    setTone(e.target.value);
-  };
+  const handleOptionChange3 = (e: any) => {
+		setTone(e.target.value);
+	};
 
-  const handleOptionChange4 = (e) => {
-    setWordLimit(e.target.value);
-  };
+  const handleOptionChange4 = (e: any) => {
+		setWordLimit(e.target.value);
+	};
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log("companyType", companyType);
     console.log("industry", industry);
@@ -58,17 +58,17 @@ const ModalForm = ({ isOpen, onClose }) => {
     //onClose();
   };
 
-  return isOpen ? (
+  return (
     <div className="modal-container">
       <div className="modal">
         <div className="modal-content">
-          <span className="close-button" onClick={onClose}>
+          {/* <span className="close-button" onClick={onClose}>
             &times;
-          </span>
+          </span> */}
           <form onSubmit={handleSubmit}>
             <label>
               Enter the text of your email here:
-              <textarea rows="6" name="area" value={text} onChange={(e) => setText(e.target.value)} className="light-grey-input" />
+              <textarea rows={6} name="area" value={text} onChange={(e) => setText(e.target.value)} className="light-grey-input" />
             </label>
             <label>
               Company Type:
@@ -128,11 +128,11 @@ const ModalForm = ({ isOpen, onClose }) => {
         </div>
         <div>{output? <div>
           Output here:
-              <textarea rows="6" name="area" value={output} className="light-grey-output" />
+              <textarea rows={6} name="area" value={output} className="light-grey-output" />
         </div>:<></>}</div>
       </div>
     </div>
-  ) : null;
+  );
 };
 
 export default ModalForm;
